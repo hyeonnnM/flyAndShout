@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 아프리카!"</title>
+    <script>
+        alert('우리 비행기는 현재 아프리카를 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh3.googleusercontent.com/5sxPCli105jG5NRQaSd8eHen-BFgOJta6TXP2NA7gU3JczatFcFKg3bnXUEurQ2lUVGreUaZ0-W4JCDJyYY5LgwXai1qjLZQD1yllReFE4zzJI46LVxMZ9S5NPGTVXzmu8BT6Uwsct_G1_7JTQ" width="100%" height="100%">
+            <img class="slide1" src="https://lh5.googleusercontent.com/vCe9pg4PEN3-EK6fo1QgCxVAfGzqWdeMqDq3_yhVLbN_0Dyif6Ge-QfCEL-Xm_5wG_cJchC8u2UTDcPPfm46nQVOku-T4KiVW5ZiSakqMBmjvoba6SpNmpKibPCDFj2-TsBmk38CiJZavo4WHQ" width="100%" height="100%">
+            <img class="slide1" src="https://lh3.googleusercontent.com/KJv3YVNqdtYfjCVZ03JJyQvgb6ZEyxyjD5kySjROQdSsQM-GJkAS3IAWedx73WHgOEkt-bSrI4iQnqep6enxIAxeNnw74NoIopQCJmS4OxOlJdTjDzXwsi__ZH8UEVJVjtuhNRFEinXK7hpoIg" width="100%" height="100%">
+            
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/32AciEK2P5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 아프리카 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>이집트</li>
+                    <li>케냐</li>
+                    <li>나이지리아</li>
+                    <li>남아프리카공화국</li>
+                    <li>나미비아</li>
+                    <li>탄자니아</li>
+                    <li>튀니지</li>
+                    <li>콩고</li>
+                    <li>가나</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>남아공(케이프타운 공항)까지 <span class="i">(경유 2회) 24시간</span></p>
+                <p>이집트(카이로 공항)까지 <span class="i">(경유 1회) 15시간</span></p>
+                <p>나이지리아(라고스 공항)까지 <span class="i">(경유 1회) 22시간</span></p>
+                <li>기후적 특성</li>
+                <p>적도를 지나고 있기에 대체로 열대우림 기후입니다. 북부는 건조기후로, 사하라 사막 등 유명한 장소가 있기도 하며 중부는 사바나 초원과 열대우림이 대부분입니다. 남부의 경우 온대 지중해성 기후를 띄어 여름엔 고온건조, 겨울엔 저온습윤합니다.</p>
+                <p>아프리카의 극남부가 아닌 이상 매우 덥고, 지역에 따라 굉장히 건조하거나 굉장히 강우량이 많은 극과 극의 양상을 보입니다. 여행하기에 다소 불쾌한 기후이기에 컨디션 관리에 신경쓰셔야겠습니다.</p>
+                <li>문화적 특성</li>
+                <p>아프리카인들은 1300년 가량 아랍, 유럽, 아메리카를 주축으로 한 노예 무역에 이용당해왔습니다. 19세기에는 유럽 제국주의 국가들의 식민 영토 쟁탈전으로 바람 잘 날이 없는 역사를 품고 있는 대륙입니다. 현재는 아프리카 대륙 각국에서 군사 독재와 쿠데타, 내전 등이 발생하고 있으며 여전히 빈곤하고 암울한 땅이라고 생각할 수 있겠습니다.</p>
+                <p>아프리카 여행은 위험한만큼 대중적이지 않아서, 아프리카 여행을 계획하실 때는 반드시 여행사의 도움을 받으시길 권장합니다. 여행자들을 위한 시설도 미비하고 치안도 매우 좋지 않습니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_14/20211018162743268_D4WW3AM32.jpg/fb457_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="(이집트 카이로)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">이집트, 카이로</span>
+                                <p>'파라오의 나라' 이집트의 피라미드와 스핑크스가 존재하는 도시입니다. 세계에서 제일 긴 강, 나일강도 이곳을 흐르고 있습니다. 교과서에서나 들어봤던 문화유적지들을 직접 만나보고 역사 속 문명의 중심지를 경험해보세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_16/20220228104507063_0L51DTI4E.jpg/fb542_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="(탄자니아, 세렝게티)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">탄자니아 세렝게티</span>
+                                <p>이곳의 사파리는 세계 그 어느 지역보다도 생생합니다. 세렝게티 국립공원에는 방대한 규모만큼 400만 마리의 다양한 야생동물이 서식하고 있습니다. 세계 최대 동물의 왕국의 장엄한 매력을 느껴보세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_15/20211129172014903_0DNH9JKEX.jpg/fb490_3_i3.jpg?type=w540_fst&type=w800_travelsearch" alt="(남아공 케이프타운)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">남아프리카공화국, 케이프타운</span>
+                                <p>아프리카가 여행하기에 척박한 환경이라 걱정이 되신다면, 풍부한 액티비티와 자연경관은 물론이고 라이브 음악의 천국이라고도 불리우는 케이프타운에서 아프리카인들의 생활을 경험해보세요.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

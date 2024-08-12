@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 동남아시아!"</title>
+    <script>
+        alert('우리 비행기는 현재 동남아시아를 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh6.googleusercontent.com/zP4vUeukKdbmC2l-W9FkC4B5djHOMd3LcAvWqQJ73ME_9bKySPfMrWdvz5GXr8Ss1oKl6uIXlrRSh2gkY_thXeey7ChKCUVm--6r64zd9zAv8-98NOc-_2SUGoGaCFNFRzEnxqoM0D30nV1JNA" width="100%" height="100%">
+            <img class="slide1" src="https://lh3.googleusercontent.com/kjiEeujejdeqWuaixFJNcM-kjKxko51eWyTd4BcaF4s6YReJ_NY6K1s315MmlXmSm6ybe3y2tm5FKUu_DtvRc_7yf4-pVrJbq82hX1lTTdoaF3rw3IweoCB80RBtcDb5lvcvQi18dk09TnLxZw" width="100%" height="100%">
+            <img class="slide1" src="https://lh5.googleusercontent.com/sU1uoaMKMvDcgoAJuimYvo01MD5p4-dWWzky142XyjvFUMZ59ddS_o0vMusM1V46gcXgYj0cMFF4QxxGlInMC3qtdlVAO-mMJimbvpSrMRWZMtuoiWO_Jo8ufJzl8Fq2uPGfJk54x-wEutmMVA" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DiTfrDRjo_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 동남아시아 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>인도네시아</li>
+                    <li>미얀마</li>
+                    <li>베트남</li>
+                    <li>태국</li>
+                    <li>싱가포르</li>
+                    <li>필리핀</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>베트남(하노이 공항)까지 <span class="i">4시간 40분</span>,</p>
+                <p>싱가포르까지 <span class="i">6시간 40분</span></p>
+                <p>태국(푸켓 공항)까지 <span class="i">6시간 30분</span></p>
+                <li>기후적 특성</li>
+                <p>동남아시아의 대부분의 국가들은 적도 부근에 위치해있기에 일 년 내내 기온이 높은 열대 기후를 띕니다. 계절풍의 영향을 받기 때문에 짧은 건기를 제외하고 강수량이 많습니다.</p>
+                <p>대략 11월부터 4월은 건기로 우기에 비해 강수가 적고 기온이 높습니다. 이 시기에 여행하신다면 폭염과 자외선을 주의하셔야 합니다.</p>
+                <p>5월부터 10월까지는 우기로 평균 4000mm의 비가 오기 때문에 이 시기에 여행하신다면, 우산과 우비를 필수로 챙겨야 하며 항공 스케쥴에 유의하셔야 합니다.</p>
+                <li>문화적 특성</li>
+                <p>불교와 이슬람교가 주요 종교입니다. 동남아시아 지역에서 주로 사용되는 언어는 국가마다 다르지만 인도네시아어, 태국어, 베트남어, 중국어, 영어, 스페인어, 말레이어 등이 있습니다.</p>
+                <p>이 지역의 국가들은 GDP에서 차지하는 서비스업의 비중이 50% 이상을 차지하는 등, 관광업에 종사하는 국민이 많은 편입니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="http://visitthailand.or.kr/thai/files/201007/08/127856453006.jpg" alt="(태국 치앙마이)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">태국 치앙마이</span>
+                                <p>치앙마이는 태국 내륙의 산골 도시로, '한달 살기'여행 지역으로 유명합니다. 태국 북부의 경제 중심지이지만 방콕보다 조용한 분위기를 가졌습니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://youimg1.tripcdn.com/target/10080500000011nf50FA6_C_760_506.jpg" alt="(베트남 호치민)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">베트남, 호치민</span>
+                                <p>옛 지명은 사이공입니다. 이곳은 베트남의 상업과 문화의 중심지로, 마치 프랑스에 있는 것 같은 느낌을 받을 정도로 프랑스 건축물이 많습니다. 프랑스식 건물과 베트남의 정취가 오묘하게 섞여 매력적인 지역입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/32870/349526_large_1555910711.jpg?1555910711" alt="(필리핀 세부)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">필리핀, 세부</span>
+                                <p>필리핀의 중남부에 위치한 섬으로, 허니문 휴양지로 사랑받고 있는 곳입니다. 마닐라의 화려함과 보라카이의 편안함을 동시에 가지고 있고 섬 내에 공항이 있어 교통이 편리합니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

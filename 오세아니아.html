@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 오세아니아!"</title>
+    <script>
+        alert('우리 비행기는 현재 오세아니아를 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh3.googleusercontent.com/PtWgY_Bf8cUPwsiU0-EkrCLqoXvQKgSvc67QZjIuedTND7PBvCBKNa9l8VIwGXioSs2ozlL1KjrbnnjsfzGJa9steAjiuBEiRPAKTrp69xGyYPuYyRMwJ9bwfFQxxtTXesUq69ba0HhbCfArqA" width="100%" height="100%">
+            <img class="slide1" src="https://lh5.googleusercontent.com/mRDxmNBcsUk8JrH-FQ8mvsuF2QEj1p_NbK2ZnEO0vKVH882Mxb5C6nNI2FjhNgslfz3B9wUao3A3AFEsD3i8q0sxXI1SpFgD_IaWwa5h8HPN-jZQbuPBG8ZdMWVrRqR7IkPgvYxwzWoKjLIFwg" width="100%" height="100%">
+            <img class="slide1" src="https://lh4.googleusercontent.com/7Pcup4xmt8uiKx6ZfrzMjTQjetAQJi8mov-q4hW9-_DiCuG8MU--JkoOPBgYLdEF_ppOM2WMuGvU4Tdasq0lB34zzS5a7svfioUK9TyL-mj_mSHFQliVT3wO5-qLiGRnQsfFSiGVwxlzGb8kyQ" width="100%" height="100%">
+            <img class="slide1" src="https://lh6.googleusercontent.com/vVWclSBcZdIXl-m4v_g7O4crZc8bxpwy_CvYSqLtiqPKZbRjcLwlSvE7a3zRv-vjDwp4HOqt9MoGD6DSYtxO94q4KzNwVQZOmmqxw3TMYqro-L-ZaCru023X5-RFf1mEHg7cFLNK00q5b-LfsQ" width="100%" height="100%">
+            <img class="slide1" src="https://lh6.googleusercontent.com/JhGt8KTKclKsRBezEOsaTGsPzV_-rTpsozjETB0zSVD5n2XGOeAkOOsDaEX4cUbCT-4t8FiNmtSratG47-Ua85tErw1skyWQxyw76fWkHYBoXyS-JhtMk7U4UCDycmpyi6u8FtNOI-b1w3AvSQ" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bKPNAa0J4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 오세아니아 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>호주</li>
+                    <li>뉴질랜드</li>
+                    <li>파푸아 뉴기니</li>
+                    <li>미크로네시아 연방</li>
+                    <li>투발루</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>호주(시드니 공항)까지 <span class="i">10시간 10분</span></p>
+                <p>뉴질랜드(오클랜드 공항)까지 <span class="i">(경유 1회) 15시간</span></p>
+                <li>기후적 특성</li>
+                <p>오세아니아는 남반구에 있는 대륙으로 계절이 한국과 반대입니다. 그리고대부분 섬의 형태이기에, 해류의 영향을 많이 받습니다. 위도 별로 북쪽은 열대우림기후, 남동쪽은 온난 혹은 해양성 기후를 띕니다. 오스트레일리아 대륙의 중심부는 사막입니다. 뉴질랜드는 북섬과 남섬으로 나뉘는데 북섬은 판의 경계로 화산지대이고, 남섬은 저위도에 위치해있어 빙하지형이 많습니다.</p>
+                <p>호주나 뉴질랜드에 방문하실 경우, 온난한 기후가 한국과 크게 다르지 않습니다. 하지만 계절이 반대이니 오며 가며 입을 옷의 두께를 다양하게 준비하셔야 하겠습니다.</p>
+                <li>문화적 특성</li>
+                <p>오세아니아는 원래 원주민들만이 살던 곳이었으며 오랜 세월 고립되어 있었다고 합니다. 그래서 코알라나 캥거루 등 이 일대에서만 서식하는 생물종이 많습니다. 호주 같은 경우 동물을 좋아하는 나라로도 유명합니다.</p>
+                <p>17세기 유럽의 탐험가들에 의해 발견되고 18세기 영국 등 유럽국가들의 식민지배를 당했던 역사가 있습니다. 현재 호주와 뉴질랜드 일대에 거주하는 사람들 중 원주민은 극소수며 대부분 유럽계 백인 이주민들입니다. 호주 같은 경우 이민이 활발하여 최근 아시아계 이주민도 많아지고 있습니다.</p>
+                <p>종교적 색은 매우 약한 편이지만 기독교가 많고, 대부분 영어를 사용합니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://live.staticflickr.com/863/41218735732_557133472d_b.jpg" alt="(호주 울룰루)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">호주, 울룰루</span>
+                                <p>지구의 배꼽이라고도 부르며, 호주의 중앙부 사막에 위치한 사암으로 이루어진 거대한 바위산입니다. 오스트레일리아의 원주민 아난구족은 이 바위산을 영혼의 성소로 여겨왔을 정도로 신비롭고 영적인 분위기를 뿜어냅니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://wishbeen-seoul.s3.ap-northeast-2.amazonaws.com/post/1448952474120_Tavarua_Photozzeria44.jpg" alt="(피지)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">피지</span>
+                                <p>오세아니아 멜라네시아에 있는 작은 섬나라로, 허니문의 목적지로도 유명한 낭만적이고 아름다운 휴양지입니다. 피지의 에메랄드빛 바다에서 스쿠버다이빙 등의 해양 레저를 즐길 수 있답니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://d1blyo8czty997.cloudfront.net/tour-photos/13637/1200x600/4393421515.jpg" alt="(뉴질랜드 오클랜드)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">뉴질랜드, 오클랜드</span>
+                                <p>뉴질랜드 북섬에 위치한 대도시로, 여러 섬으로 이루어져 있는 곳입니다. 와이너리와 포도밭이 많아 와인의 섬으로 불리기도 하는데, 와인 시음과 함께 크루즈 투어도 즐길 수 있습니다. '많은 사랑을 받는'다는 이름의 뜻만큼 사랑스러운 감성을 지닌 도시입니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 서유럽!"</title>
+    <script>
+        alert('우리 비행기는 현재 서유럽을 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh4.googleusercontent.com/LOBymllaJEuaCOd_MWREuh96GZGNwhoy7T_XFx54mS-cBVwC9Pbm_s9T1zMKrTCdwCLLXcMuIffYXiBPvFOf4qgJodmF0FJfxNU1X505Kprwp3HlQVcA7HYzejTLcaOcdUfFzkmG3qTkC1JUIw" width="100%" height="100%">
+            <img class="slide1" src="https://lh6.googleusercontent.com/c5-vHv4JyHgN6qke_1lpAHUtnHDZSc2KWXB6axPxcOzM-Z-RhN9wAnIEFQ0BOk0ES1clPkahHcf93U8lZfD6vAh7oB-GWLH7GS6ZT6r8vfU3prRMteW7Uh1Za5ePc9mLU5dUWq3x2hsYK6-mbA" width="100%" height="100%">
+            <img class="slide1" src="https://lh5.googleusercontent.com/0xMnxLULdRzB5vAEMHY6JQAd6EL9kI4TLnWHZ87UeXmusydA-HY198gC72UstQK32WqaFn3cxH7eUHtsf9jbFzvREYggBTp78C1_MTWCxbmfTuyd6HJYX1I8ROlJTeUfRf7V8Oltx3JsuosCIg" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QgVKzjtIfhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 서유럽 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>영국</li>
+                    <li>프랑스</li>
+                    <li>독일</li>
+                    <li>네덜란드</li>
+                    <li>벨기에</li>
+                    <li>스페인</li>
+                    <li>스위스</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>프랑스(파리 공항)까지 <span class="i">12시간</span></p>
+                <p>영국(런던 공항)까지 <span class="i">12시간 30분</span></p>
+                <p>독일(베를린 공항)까지 <span class="i">(경유 2회) 22시간</span></p>
+                <p>네덜란드(암스테르담 공항)까지 <span class="i">(경유 1회) 16시간</span></p>
+                <li>기후적 특성</li>
+                <p>주로 온대기후이며, 계절풍의 영향이 없기에 위도의 유라시아 극동지방과 비교했을 때 훨씬 온화한 편입니다. 남쪽은 지중해성 기후를 띄고 있어서, 여름에는 고온건조하며 겨울에는 저온다습합니다. 유럽의 서해안에는 난류인 북대서양해류가 흐르기 때문에, 유럽의 서부는 일년 내내 비가 꾸준히 자주 옵니다. 대신 겨울에도 그닥 춥지 않아 여행하기 좋습니다.</p>
+                <p>유럽의 서부를 여행하신다면, 항상 우산을 챙겨 다니시는 걸 추천드립니다.</p>
+                <li>문화적 특성</li>
+                <p>유럽은 개신교가 가장 많고, 언어는 프랑스어, 영어, 독일어, 스페인어 등 국가별로 매우 다양한 언어를 사용합니다.</p>
+                <p>인종이 다양하지 않고 문화 개방성이 다소 폐쇄적일 수 있기 때문에, 서유럽에서는 인종차별을 조심하세요.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://t1.daumcdn.net/cfile/tistory/99EFEC365C42903C07" alt="(프랑스 파리)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">프랑스, 파리</span>
+                                <p>'사랑의 도시'라고도 불리는 파리는 예술과 낭만이 가득한 도시입니다. 세계적으로 유명한 관광명소들도, 골목골목 자리한 유명 레스토랑들도 많습니다. 누구나 가슴 속에 품어보았을 이 도시로 여행을 떠나보세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://www.airtecnics.com/media/6381/Alhambra-in-Granada.jpg" alt="(스페인 그라나다)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">스페인, 그라나다</span>
+                                <p>'알함브라 궁전의 추억'이라는 음악 속 도시가 바로 이 그라나다입니다.  이곳은 역사 속 궁전을 관광하고, 지중해를 온전히 느끼며 산책할 수 있는 매력적인 도시로, 스페인의 짙은 향기를 맡을 수 있는 시간이 될 것입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://youimg1.tripcdn.com/target/100h1f000001grwbp1ED5.jpg?proc=source%2Ftrip" alt="(스위스 루체른)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">스위스, 루체른</span>
+                                <p>모든 순간 마치 동화 속에 있는 것 같은 기분을 선사할 이 도시는 스위스의 매력을 그대로 담고 있습니다. 웅장하고 신비로운 분위기는 물론이고 안전하고 깨끗하기로 유명한 스위스는 '누구나 사랑에 빠질 수밖에 없는' 여행지입니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

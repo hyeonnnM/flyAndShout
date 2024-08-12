@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 북아메리카!"</title>
+    <script>
+        alert('우리 비행기는 현재 북아메리카를 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh3.googleusercontent.com/vgWsTC5bXMYorqPB_5Dm_rFyQn7cohXazrpPAJR9VxAQraR5Q5KYyj5lMehEHB_GjtL6Ivl64qQlHAKbyewXDqu0_uFhDnApQYKzVLvELcZ7fipq1keyWmgLnfURTs6BE9ow4_QIgsx8UcGWsw" width="100%" height="100%">
+            <img class="slide1" src="https://lh4.googleusercontent.com/DcZQ2WzF92IdLAGbYcVnRR65VDZI-ZqDVf5Gb5F79dclkdWzdzhSb3vy3K1wx9zmtJr_XBwp6cm05cZkMe6iC_Op2jmnZyM4-okZjbWsuPfaBkS37mLOe6aRFTmp7UC58tgvVW6YXt6DTRvxQg" width="100%" height="100%">
+            <img class="slide1" src="https://lh3.googleusercontent.com/3-bCzWc7DYt-YyQiv3LAS7iEjtQAhJxOkORwHvINarBONxVOnh1_cP4jhFOyyWyscQzdUqzCpLMl4badhJhaUCAbrXicW0MAOVCGTjUPvNXdTiQ-2j5amzfPDIDssm4CIO70WpkgJRb6ppKp-g" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b7FNvq11CEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 북아메리카 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>미국</li>
+                    <li>캐나다</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                    <p>미국 뉴욕(존 F. 캐내디 공항)까지 <span class="i">14시간</span></p>
+                    <p>미국 캘리포니아(로스앤젤레스 공항)까지 <span class="i">11시간 10분</span></p>
+                    <p>캐나다(토론토 공항)까지 <span class="i">11시간 40분</span></p>
+                <li>기후적 특성</li>
+                    <p>미국의 경우 지역에 따라서 매우 다양한 기후를 가지고 있습니다. 우리가 주로 방문하는 미국의 주요도시의 경우 온대기후를 보이며, 플로리다 반도와 같은 남부는 열대 기후를 보입니다. 북부는 냉대기후, 내륙 서부는 사막기후를 보이기도 합니다.</p>
+                    <p>캐나다는 고위도 지방으로 겨울에는 기온이 영하 25도까지 내려가기도 하지만, 밴쿠버는 상대적으로 온화한 편입니다. 캐나다는 연교차가 매우 크기에 여름에는 35도 이상으로 기온이 오르기도 합니다. 밴쿠버의 경우 유럽과 비슷한 기후를 가지고 있어서 겨울에 눈과 비가 많이 옵니다.</p>
+                    <p>방문하는 세부지역과 계절에 따라서 꼼꼼하게 짐을 준비하셔야겠습니다. 캐나다의 경우, 겨울에 폭설이 잦으므로 항공권과 여행계획에 이 점을 참고하셔야 합니다.</p>
+                <li>문화적 특성</li>
+                    <p>문화적으로 북미를 구분하면 앵글로아메리카라고도 할 수 있는데, 영국의 문화적 영향을 많이 받고 영어를 사용하는 나라들이기 때문입니다. 하지만 이는 북부 아메리카 대륙의 작은 나라들과, 캐나다의 퀘백주 같은 경우를 포함하지 않는 용어입니다. 캐나다 퀘백의 경우 프랑스어를 사용하고 프랑스의 영향을 많이 받았기에 이 지역에 방문하시려면 영어보다 프랑스어를 준비해가시는 게 좋겠습니다.</p>
+                    <p>북미는 다양한 인종과 문화, 종교가 섞여있는 곳으로 타 서구권 지역보다는 인종차별 걱정을 덜 하셔도 되겠습니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://image.kkday.com/v2/image/get/w_960%2Cc_fit%2Cq_55%2Ct_webp/s1.kkday.com/product_36308/20200115025052_2RZeI/jpg" alt="(미국 뉴욕)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">미국, 뉴욕</span>
+                                <p>전 세계에서 가장 인구가 많은 도시입니다. 관광명소와 쇼핑센터가 굉장히 많기도 합니다. 세계에서 가장 큰 대도시의 명성에 걸맞게 화려하고 활기찬 도시의 밤을 즐길 수 있는 곳입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://t1.daumcdn.net/cfile/tistory/22598A42560A77152D" alt="(미국 라스베이거스)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">미국, 라스베이거스</span>
+                                <p>카지노로 유명한 이곳 라스베가스는 사막에 위치한 화려한 관광도시입니다. 카지노는 물론이고 호텔과 바, 극장, 클럽과 같은 레저활동을 즐기기도 좋고, 그랜드 캐니언과 같은 웅장한 자연 협곡을 관광할 수도 있습니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://w.namu.la/s/9cf6f3c114103c0f01e531f984aa9c88562c2b11633c07c8c1dc436bdcdcdd192d272d1bcbe017b88c520038f90bdeaf56e01dee6e12687d231c435ea3988fdb799ad32940efa94af59dbe52192bd3c26f008da1ff2545226cb39495adcab961" alt="(캐나다 밴쿠버)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">캐나다, 밴쿠버</span>
+                                <p>'세계에서 가장 살기 좋은 도시' 최상위권에 랭크된 이 도시는, 온화한 기후화 깨끗한 환경을 자랑합니다. 산과 바다 사이에 자리해있고, 휴가를 보낼만한 레저활동들이 잘 구비되어 있는 평화로운 도시입니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 북유럽!"</title>
+    <script>
+        alert('우리 비행기는 현재 북유럽을 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh3.googleusercontent.com/sAB5uBL13acubXhxJQb4yNVAHtJiHJdGmKPuijPm7Z-1CmNI84cRiuvWU_sEkc1LFxVyPXfysHSLRs_OgTFALZzadAY5iMGT_R8_1zli1XXuRB-dEhB2px_TtJbVIOKW0bRFuzJZFeOWH0isgg" width="100%" height="100%">
+            <img class="slide1" src="https://lh4.googleusercontent.com/I5ionPERkH32sqASjTHc90Qo4xOmrL7IIW-LsaI-Kt1WISqYGC6n7arua0mSd-e9Buy7JdL9Yh0uwzaTZxgbCfW47Yzf7QnZf5C450POqybpjbpQBY4VlYx-0iuaGYpa7V54XCTrBKR3IwS7Zg" width="100%" height="100%">
+            <img class="slide1" src="https://lh5.googleusercontent.com/JHwfoTzefC5vgx37d0GnXr_oDhUiQYg54dkv4qj3qUX4HySOsulSaK4IdnXucA2gNsdLm2kxaYrWKUhpFOqK4J1HjCph9ETkyxckRY_GJMHjvf2_baLFuaelyGUlGM8W5HfReuUGfh0Wn-7XdA" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/72ZVFzu0WnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 북유럽 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>노르웨이</li>
+                    <li>스웨덴</li>
+                    <li>핀란드</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>노르웨이(오슬로 공항)까지 <span class="i">(경유 1회) 17시간</span></p>
+                <p>스웨덴(스톡홀름 공항)까지 <span class="i">(경유 1회) 15시간</span></p>
+                <p>(스칸디나비아 항공이 한국에는 취항하지 않기 때문에, 북유럽은 경유가 필수적입니다.)</p>
+                <li>기후적 특성</li>
+                <p>위도가 높고 난류의 영향이 강한 탓에 겨울에는 낮에도 어두워 일조량이 부족하며 이 지역에는 거의 항상 눈이나 비가 내립니다. 여름에는 백야 현상으로 인해서 하루 종일 햇빛이 쨍쨍합니다. 하지만 고위도 지역이기에 온도는 높지 않습니다.<sub>(농사가 잘 안 돼서 인구가 늘어나기 힘들었고, 산업혁명 전까지는 이곳이 유럽에서 가장 살기 어렵고 가난한 동네였다고 합니다. 그리고 여전히 유럽에서 자살률이 제일 높은 지역이라고..)</sub></p>
+                <p>여행을 가실 때는 여름이어도 두꺼운 옷을 준비하시고, 계절에 따라 낮밤 중 하나만 경험하게 될 수 있다는 점을 명심하세요.</p>
+                <li>문화적 특성</li>
+                <p>북게르만어계통에 속한 언어가 공용어이며, 2차대전 직후부터 사회주의의 영향을 받으며 비종교적인 나라가 되었습니다.</p>
+                <p>스칸디나비아 3국은 동화 나라의 이미지가 강한데, 그 이유는 바로 위도와 연교차에 따른 일조량 불균형으로 인해 백인의 스테레오 타입으로 연상되는 큰 키와 금발, 파란 눈동자를 가진 사람이 가장 많이 나타나는 지역이라고 합니다. 산타클로스의 나라, 겨울왕국의 나라이기도 합니다.</p>
+                <p>추가로, 물가가 많이 높습니다. 유럽 중에서도 특히 높은 편으로, 여행경비가 타지역보다 많이 든다는 점을 유의하셔야 하겠습니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://storage.doopedia.co.kr/upload/_upload/image4/newimage/20171005074633_bbefawzs.jpg" alt="(노르웨이 오슬로)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">노르웨이, 오슬로</span>
+                                <p>노르웨이의 남부 해안에 있는 도시로, 노르웨이의 수도이며 노벨평화상이 수상되는 도시입니다. 이곳은 바이킹의 후예들의 나라인 노르웨이의 수도답게 항구도시이기도 합니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://t1.daumcdn.net/cfile/tistory/99A16D445C1DF6FA37" alt="(핀란드 라플란드)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">핀란드, 라플란드</span>
+                                <p>라플란드는 여름에는 한밤중에도 떠있는 태양을 볼 수 있고, 겨울에는 오로라를 관측할 수 있는 도시입니다. 산타클로스 마을도 이곳에 위치합니다. 고요하지만 특별하고 신비로운 도시인 라플란드의 매력을 느껴보세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://ko.skyticket.com/static/img/international-flights/SWE.jpg" alt="(스웨덴 예테보리)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">스웨덴, 예테보리</span>
+                                <p>스웨덴 서부에 위치한 예테보리는, 환경보전이 매우 뛰어난 도시로도 유명합니다. 활기차지만 동시에 느긋한 이 도시는 관광지로 널리 알려지지는 않았기에 더욱 깨끗하고 여유로운 북유럽의 정취를 만끽할 수 있는 곳입니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

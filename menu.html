@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Fly and shout, "Hello world!" - menu</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+            body {
+                background: rgb(82, 79, 94);
+                font-family: 'Gowun Dodum', sans-serif;
+            }
+            #menu {
+                width: 320px; height: 750px;
+                border: 3px solid white;
+                background-color: rgba( 255, 255, 255, 0.5 );
+                margin: 0 auto;
+            }
+            .list {
+                position: absolute;
+                list-style: none;
+            }
+            li.listgroup  b {
+                display: block;
+                line-height: 70px;
+                font-size: large;
+                text-decoration: none;
+                color: black;
+            }
+            li.backhome > a > b {
+                display: block;
+                line-height: 70px;
+                font-size: large;
+                text-decoration: none;
+                animation-name: textcolor;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            li.list_item > a {
+                line-height: 30px;
+                text-decoration: none;
+                color: black;
+            }
+            li.list_item > a:hover {
+                color: rgb(10, 99, 207);
+                background-color: rgba( 255, 255, 255, 0.5 );
+            }
+            span:hover {
+                color: rgb(10, 99, 207);
+                background-color: rgba( 255, 255, 255, 0.5 );
+            }
+            @keyframes textcolor {
+                0% {color:limegreen;}
+                25% {color:dodgerblue;}
+                50% {color:violet;}
+                70% {color: dodgerblue;}
+                100% {color: limegreen;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

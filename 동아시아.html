@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 동아시아!"</title>
+    <script>
+        alert('우리 비행기는 현재 동아시아를 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh6.googleusercontent.com/1hKwa2UAhTWlidHzmvymuEXKtda9Uvf4QSwSIQ_q_75fYKCtxIAxkKQEl9nTqlgp595BegabUpvwHRo40pVlG1Cs2Aq7lO8CvgsRvjJsV86KN4rzB5XZBefLVh6ho4wL3OQNWzNAO9trkDyiXA" width="100%" height="100%">
+            <img class="slide1" src="https://lh3.googleusercontent.com/6KFMOaLcHsZoqbkFXMCY-jfGpuLFDQCBgMxA64v7BiWS9AAfHBdmKDSFdkpGBSeTWtvEI3A-CiA1NJLyouFpWTIzb4He19Sk618OTqTnB233RieVpQHTpLvuscGCZBgm_xs61GknQ2G4xC1yyg" width="100%" height="100%">
+            <img class="slide1" src="https://lh3.googleusercontent.com/zQ78St8mkva5-GMTH8i98Dcoy9D-iO0_4jnxyRSJtPVsmVKOOMtSqnsvIxza26tIw_l4aBXN2iXbJbQWp9R0HqcCaTVM8wRuWQLfjn58dsM248ESVW9h-ZkZiHAa22cUkn4-n6x4XD1HxbWhWw" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vH8xBXzWQ7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 동아시아 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>대한민국</li>
+                    <li>일본</li>
+                    <li>중국</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>도쿄(나리타 공항)까지 <span class="i">2시간 20분</span>,</p>
+                <p>베이징까지 <span class="i">(경유 1회) 8시간</span> (코로나19 확산 이후 직행편이 없습니다.)</p>
+                <li>기후적 특성</li>
+                <p>동아시아 국가들은 사계절이 뚜렷하고 주로 온대성 기후를 띕니다. 강수는 여름인 6~9월에 집중되어 있기에 고온다습하며, 겨울 및 봄철에는 건조합니다.</p>
+                <p>여름철 여행을 계획하신다면 폭염과 태풍, 홍수에 주의하시는 게 좋겠습니다.</p>
+                <li>문화적 특성</li>
+                <p>화폐는 원, 엔, 위안 등을 사용합니다.</p>
+                <p>언어의 경우에는 대한민국과 조선민주주의인민공화국은 한국어, 중화인민공화국은 중국어와 여러 소수민족의 언어(티베트어, 위구르어 등), 중화민국에서는 중국어, 타이완어를 주로 사용하며 일본은 일본어, 몽골에서는 몽골어를 주로 사용합니다.</p>
+                <p>동아시아 문화권의 공통된 요소는 한자, 유교, 불교 등입니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://www.heritage.go.kr/unisearch/images/national_treasure/2021062917362703.jpg" alt="(한국 경복궁)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">대한민국 서울, 5대 고궁</span>
+                                <p>한국관광공사의 '한국관광 100선'에 빠진 적 없는 서울의 5대 고궁은 한국의 고풍스러운 역사를 잘 담아낸 장소입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://a.cdn-hotels.com/gdcs/production127/d1781/ac9d03ef-22b4-4330-8e8d-695093138cf4.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt="(일본 아사쿠사)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">일본 도쿄, 아사쿠사</span>
+                                <p>일본의 문화를 잘 보여주는 장소로, 도쿄의 신주쿠역 주변은 이 아사쿠사를 포함해 곳곳이 멋진 명소입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/GreatWall_2004_Summer_4.jpg" alt="(중국 만리장성)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">중국, 만리장성</span>
+                                <p>인류가 만든 가장 거대한 건축물인 만리장성은 세계 7대 불가사의 중 하나로, 중국에 방문했다면 한 번쯤 들러보기 좋은 장소입니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fly and shout, "Hello 서아시아!"</title>
+    <script>
+        alert('우리 비행기는 현재 중동을 지나고 있습니다~!');
+    </script>
+    <script>
+        var index = 0;
+        window.onload = function(){
+            slideShow();
+        }
+        function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }   
+        x[index-1].style.display = "block";
+        setTimeout(slideShow, 2000);
+    }
+    </script>
+    <link rel="stylesheet" href="fly.css">
+</head>
+<body>
+    <div id="top">
+        <h1 class="logo">Fly and shout, "Hello world!"</h1>
+        <a href="menu.html"><img src="menu.png" class="menu_img"></a>
+    </div>
+    <div id="middle">
+        <div id="main_section">
+            <img class="slide1" src="https://lh4.googleusercontent.com/nEFViqlfa18z6yT6GOEwF-WB1kXXU82fgJmMWuf4Wo4-_Obni2a1hJeBz5qvHQNdC3hFfQ3ZFdQLsnU3GDyhA1C1xwxnjJ6x-cTCOkNjt7aHdm_A3tp41x5_m74ShHGQ4BD_CcQPdHAq4VlyRA" width="100%" height="100%">
+            <img class="slide1" src="https://lh5.googleusercontent.com/seL7xF3t5xB4zjRcA0WZTHOKVYc949hy-s2AnsVs6nqpjKKjZmGZia5BJiRNxaFne-DSxrl1VUdivHrDW3KGEXPvDl5FqWPFSGFS_WeRshs0epdVpsFIiUlkNOYCM1v0DjSrkJe4227738SteA" width="100%" height="100%">
+            <img class="slide1" src="https://lh3.googleusercontent.com/V3iQRzJYpqY7kwu3H31XOYsExg_eP57mq7M3DO776MGCQafRxGWtZAzuTKQEePDfA7l8u8DhBbUd_RNVZOba6VHpwW66Qqz1mfLpEoUV8HOe2o8RTa3R02f0znu9IlFIF5GjMy5CXKdo317IWA" width="100%" height="100%">
+        </div>
+        <div id="menu">
+            <ul class="list">
+                <li class="listgroup"><b>아시아</b>
+                    <ul>
+                        <li class="list_item"><a href="동아시아.html">동아시아</a></li>
+                        <li class="list_item"><a href="동남아시아.html">동남아시아</a></li>
+                        <li class="list_item"><a href="서아시아.html">서아시아</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>유럽</b>
+                    <ul>
+                        <li class="list_item"><a href="동유럽.html">동유럽</a></li>
+                        <li class="list_item"><a href="서유럽.html">서유럽</a></li>
+                        <li class="list_item"><a href="북유럽.html">북유럽</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup"><b>아메리카</b>
+                    <ul>
+                        <li class="list_item"><a href="북아메리카.html">북아메리카</a></li>
+                        <li class="list_item"><a href="중남미.html">중앙,남아메리카</a></li>
+                    </ul>
+                </li>
+                <li class="listgroup list_item"><a href="오세아니아.html"><b><span>오세아니아</span></b></a></li>
+                <li class="listgroup list_item"><a href="아프리카.html"><b><span>아프리카</span></b></a></li>
+                <li class="listgroup"><b>&nbsp;</b>
+                <li class="listgroup list_item backhome"><a href="main.html"><b>다시 하늘로 돌아가기</b></a></li>
+            </ul>
+        </div>
+        <div id="video_section">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZC8OkVxbxh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="column_section"> <link rel="stylesheet" href="col.css">
+            <h1>《 서아시아 》</h1>
+            <hr>
+            <ol>
+                <li>대표 국가</li>
+                <ul>
+                    <li>터키</li>
+                    <li>사우디아라비아</li>
+                    <li>이스라엘</li>
+                    <li>아랍에미리트</li>
+                    <li>이스라엘</li>
+                    <li>이란</li>
+                </ul>
+                <li>평균 비행시간 (인천공항 기준)</li>
+                <p>아랍에미리트(두바이 공항)까지 <span class="i">10시간 20분</span>(경유할 시 30시간)</p>
+                <p>이란(테헤란 공항)까지 <span class="i">(경유 1회) 15시간 30분</span></p>
+                <p>이스라엘(텔아비브 공항)까지 <span class="i">(경유 2회) 27시간</span></p>
+                <li>기후적 특성</li>
+                <p>이 지역은 주로 건조기후로, 연평균 강수량이 50mm 이하로 매우 적습니다. 건조함은 물론이고 이라크의 7월 평균 온도는 36도, 사막 지역은 훨씬 높은 온도를 유지하는 굉장히 더운 지역입니다. 겨울에는 온도가 비교적 낮습니다.</p>
+                <p>이 지역을 여행할 때는 겨울이 낫고, 쾌적한 여행을 위해서는 강이나 오아시스 근처 지역을 방문하는 것이 좋겠습니다.</p>
+                <li>문화적 특성</li>
+                <p>서아시아는 이스라엘을 제외하고 모두 이슬람교를 믿습니다. 공용어도 아랍어입니다. 여행 전 이슬람 문화와 아랍어에 대한 충분한 숙지가 필요합니다.</p>
+                <p>이슬람의 영향으로 민소매와 반바지 착용을 자제하고 최대한 긴 옷으로 몸을 가리는 게 좋습니다. 또, 라마단 기간에 방문하게 될 경우 현지인 앞에서 물을 포함하여 음식을 섭취하지 않도록 주의해야 합니다.</p>
+                <p>정치와 문화, 종교적으로 굉장히 민감한 지역이기에 방문하는 국가에 대한 이해가 필수적입니다.</p>
+                <li>
+                    대표 관광지
+                    <table>
+                        <tr>
+                            <td class="img"><img src="https://www.visitdubai.com/-/media/gathercontent/article/t/top-things-to-do-in-dubai/fallback-image/top-things-to-do-in-dubai-bridge-canal-header.jpg?rev=9c17c6a61b0d4aacb287a0100ab3d95a&cx=0.6&cy=0.42&cw=1556&ch=690" alt="(아랍 두바이)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">아랍에미리트, 두바이</span>
+                                <p>두바이는 중동의 다른 지역에 비해 안전하고 치안이 잘 되어있는 편이며, 고급호텔과 같은 관광시설이 매우 풍부합니다. 눈부신 발전을 이룬 사막도시를 경험하고 싶다면 매우 추천하는 여행지입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="http://diverseasia.snu.ac.kr/wp-content/uploads/2021/06/1-768x432.jpg" alt="(사우디 메카)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">사우디아라비아 메카</span>
+                                <p>이슬람 3대 성지인 이곳은 매년 수많은 무슬림이 순례를 다녀오는 곳입니다. 사우디 종교관광산업의 중심지로, 이슬람 문화와 역사에 흥미가 있다면 들러볼 만한 곳입니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://youimg1.tripcdn.com/target/0101f120008k3b0in90D4_C_760_506.jpg" alt="(터키 이스탄불)네트워크 연결이 필요합니다."></td>
+                            <td class="w">
+                                <span class="i">터키, 이스탄불</span>
+                                <p>아시아와 유럽의 문화가 조우하는 도시인 이스탄불은, 역사적으로 3개의 왕국의 수도로 사용된 바가 있습니다. 각 문화권의 유적은 훌륭하게 보존되어있어 관광명소로 자리매김했습니다. 동양과 서양의 조화를 엿볼 수 있는 매력적인 도시입니다.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <div id="bottom">
+    </div>
+</body>
+</html>
